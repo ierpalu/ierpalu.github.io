@@ -1,0 +1,5 @@
+To view the Map.
+1. Download entire folder of 'qgis2web_2018_.....' to your computer.
+2. Double click on index.html (if your computer default html viewer is browser such as google chrome, firefox, etc)
+3. If index.html is opened with notepad or any other text editor instead of browser, then Right-click on the 'index.html' and choose 'Open with', and choose 'Chrome' or any other browser installed in your computer.
+note: the map can work without internet, but it's better (optional though) to connect to the internet, since your computer might required to connect to the Jquery CDN service to properly showing the map markers.
