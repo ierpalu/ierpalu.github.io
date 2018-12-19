@@ -21,6 +21,28 @@
             margin: 0;
         }
         </style>
+ <style type="text/css">
+ .btn {
+  position: absolute;
+  z-index: 9999;
+    top: 96%;
+    left: 5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: black;
+}
+</style>
         <title>Map of Client Distribution - HI IER Palu</title>
     </head>
     <body>
@@ -44,6 +66,14 @@
         <script src="data/KabDonggala_3.js"></script>
         <script src="data/KabParigiMoutong_4.js"></script>
         <script src="data/db_17Des18_5.js"></script>
+
+        <script type="text/javascript">
+            function visitPage(){
+                window.location='//ierpalu.github.io/';
+            }
+        </script>
+        <button class="btn" onclick="visitPage();">Back to Homepage</button>
+
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
@@ -352,7 +382,7 @@
             propertyName: 'Desa'}));
         document.getElementsByClassName('search-button')[0].className +=
          ' fa fa-binoculars';
+
         </script>
-        <a href="../">Click Here to go Back Home </a>
     </body>
 </html>
